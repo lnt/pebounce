@@ -28,6 +28,4 @@ const pebounce = function pebounce(callback,p1,p2,p3) {
 
 
 // Adds compatibility for ES modules
-pebounce.pebounce = pebounce;
-
-module.exports = pebounce;
+export default pebounce
