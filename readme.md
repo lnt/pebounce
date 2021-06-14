@@ -1,6 +1,5 @@
 # pebounce
-
-> [Debounce](https://css-tricks.com/debouncing-throttling-explained-examples/) promise-returning & async functions
+> *debounce* used to ignore most of my requests, so I found something more promising.
 
 ## Install
 
@@ -56,10 +55,15 @@ Type: `object`
   and reset the execution timer for subsequent invocations of the debounced
   function.
 
+## Reference
+ * [Debounce](https://css-tricks.com/debouncing-throttling-explained-examples/) promise-returning & async functions
+
 ## License
 
   MIT
 
   Original implementation is from [`underscore.js`](http://underscorejs.org/)
   which also has an MIT license.
+ 
+
 
