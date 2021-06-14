@@ -24,37 +24,6 @@ for (const number of [1, 2, 3]) {
 //=> 3
 //=> 3
 ```
-
-## API
-
-### pebounce(fn, wait, options?)
-
-Returns a function that delays calling `fn` until after `wait` milliseconds have elapsed since the last time it was called.
-
-#### fn
-
-Type: `Function`
-
-Promise-returning/async function to debounce.
-
-#### wait
-
-Type: `number`
-
-Milliseconds to wait before calling `fn`.
-
-#### options
-
-Type: `object`
-
-##### before
-
-Type: `boolean`\
-Default: `false`
-
-Call the `fn` on the [leading edge of the timeout](https://css-tricks.com/debouncing-throttling-explained-examples/#article-header-id-1). Meaning immediately, instead of waiting for `wait` milliseconds.
-
-
 ## API
 
 ### debounce(fn, wait, [ immediate || false ])
@@ -62,6 +31,17 @@ Call the `fn` on the [leading edge of the timeout](https://css-tricks.com/deboun
   Creates and returns a new debounced version of the passed function that
   will postpone its execution until after wait milliseconds have elapsed
   since the last time it was invoked.
+
+#### fn
+Type: `Function`
+Promise-returning/async function to debounce.
+
+#### wait
+Type: `number`
+Milliseconds to wait before calling `fn`.
+
+#### immediate
+Type: `object`
 
   Pass `true` for the `immediate` parameter to cause debounce to trigger
   the function on the leading edge instead of the trailing edge of the wait
