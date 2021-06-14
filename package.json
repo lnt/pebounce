@@ -1,0 +1,35 @@
+{
+  "name": "pebounce",
+  "description": "Debounce promise-returning & async functions",
+  "version": "0.0.1",
+  "repository": "git://github.com/lnt/pebounce",
+  "main": "index.js",
+  "author": {
+		"name": "Lalit Tanwar",
+		"email": "lalit.tanwar07@gmail.com",
+		"url": "https://lalittanwar.com"
+  },
+  "scripts": {
+    "test": "minijasminenode test.js"
+  },
+  "license": "MIT",
+  "keywords": [
+    "function",
+    "throttle",
+    "invoke"
+  ],
+  "dependencies": {
+	  "debounce": "^1.2.1"
+   },
+  "devDependencies": {
+    "minijasminenode": "^1.1.1",
+    "sinon": "^1.17.7",
+    "mocha": "*",
+    "should": "*"
+  },
+  "component": {
+    "scripts": {
+      "pebounce/index.js": "index.js"
+    }
+  }
+}
