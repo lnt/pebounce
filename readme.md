@@ -1,4 +1,4 @@
-# p-debounce
+# pebounce
 
 > [Debounce](https://css-tricks.com/debouncing-throttling-explained-examples/) promise-returning & async functions
 
@@ -48,10 +48,10 @@ Type: `object`
   interval. Useful in circumstances like preventing accidental double-clicks
   on a "submit" button from firing a second time.
 
-  The debounced function returned has a property 'clear' that is a 
+  The pebounced function returned has a property 'clear' that is a 
   function that will clear any scheduled future executions of your function.
 
-  The debounced function returned has a property 'flush' that is a 
+  The pebounced function returned has a property 'flush' that is a 
   function that will immediately execute the function if and only if execution is scheduled,
   and reset the execution timer for subsequent invocations of the debounced
   function.
