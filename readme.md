@@ -26,7 +26,7 @@ for (const number of [1, 2, 3]) {
 ```
 ## API
 
-### debounce(fn, wait, [ immediate || false ])
+### pebounce(fn, wait, [ immediate || false ])
 
   Creates and returns a new debounced version of the passed function that
   will postpone its execution until after wait milliseconds have elapsed
