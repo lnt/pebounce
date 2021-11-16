@@ -2,17 +2,19 @@
 import debounce from 'debounce';
 
 const pebounce = function pebounce(callback,p1,p2,p3) {
-    let promise,resolve,context;
-    var debounced = debounce(function(a1,a2,a3,a4) {
-        resolve(callback.apply(context,a1,a2,a3,a4)); 
+    let promise,resolve,context,args;
+    var debounced = debounce(function() {
+        resolve(callback.apply(context,args)); 
+        context = args = null;
         promise = null;  
     },p1,p2,p3);
-    let pebounced  = function(a1,a2,a3,a4){
+    let pebounced  = function(){
         context = this;
+        args = arguments;
         promise =  promise || new Promise(function (r) {
             resolve = r;
         });
-        debounced(a1,a2,a3,a4);
+        debounced();
         return promise;
     }
 
